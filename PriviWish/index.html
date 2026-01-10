@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PriviWish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+<body>
+
+  <div class="container">
+
+    <img src="assets/privi.png" class="logo">
+    
+
+<p class="tagline">Private moments, beautifully delivered</p>
+
+    
+ <textarea id="message" placeholder="Write your PriviWish here..."></textarea>
+ <br><br>
+
+
+
+    <select id="theme">
+      <option value="rose">Rose 💖</option>
+      <option value="sunset">Sunset 🌅</option>
+      <option value="night">Night 🌙</option>
+    </select>
+<br>
+<br>
+
+
+    <button class="start-btn" onclick="generateWish()">Generate PriviWish 💌</button>
+
+    <p id="output"></p>
+    <div id="qrcode"></div>
+
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

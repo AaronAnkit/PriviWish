@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your PriviWish 💖</title>
+</head>
+<body>
+
+  <h1>Heyy, someone sent you a PriviWish</h1>
+  <p id="wish"></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const msg = params.get("msg");
+
+    document.getElementById("wish").innerText = msg;
+  </script>
+
+</body>
+</html>

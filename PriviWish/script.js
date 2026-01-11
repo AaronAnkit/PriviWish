@@ -15,21 +15,25 @@ function generateWish() {
   const message = document.getElementById("message").value;
 
   if (message.trim() === "") {
-    alert("Write a message first ❤️");
+    alert("Write a message first 💖");
     return;
   }
 
   const encoded = encodeURIComponent(message);
-  const link = `view.html?msg=${encoded}`;
+ const link = `https://priviwish.vercel.app/view.html?msg=${encoded}`;
+
+
 
   document.getElementById("output").innerHTML =
-    `Scan or share this PriviWish 💖<br><a href="${link}" target="_blank">${link}</a>`;
+    `Scan or share this PriviWish 💖<br><a href="${link}">${link}</a>`;
 
   document.getElementById("qrcode").innerHTML = "";
 
   new QRCode(document.getElementById("qrcode"), {
     text: link,
-    width: 200,
-    height: 200
+    width: 260,
+    height: 260,
+    margin: 2
   });
 }
+

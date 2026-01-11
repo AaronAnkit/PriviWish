@@ -20,7 +20,8 @@ function generateWish() {
   }
 
   const encoded = encodeURIComponent(message);
- const link = `https://priviwish.vercel.app/view.html?msg=${encoded}`;
+ const link = `https://priviwish.vercel.app/view/?msg=${encoded}`;
+
 
 
 
